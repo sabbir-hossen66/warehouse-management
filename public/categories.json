@@ -1,0 +1,50 @@
+[
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/HqKHm2s/book-3-1.png"
+    },
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/zZhPM9b/book-2-1.png"
+    },
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/zZhPM9b/book-2-1.png"
+    },
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/zZhPM9b/book-2-1.png"
+    },
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/zZhPM9b/book-2-1.png"
+    },
+    {
+        "name": "book",
+        "description": "abc",
+        "price": 120,
+        "quantity": 2,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/zZhPM9b/book-2-1.png"
+    }
+]
