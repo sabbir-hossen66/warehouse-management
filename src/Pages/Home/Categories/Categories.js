@@ -10,9 +10,9 @@ const Categories = () => {
             .then(data => setCategories(data));
     }, [])
     return (
-        <div>
+        <div className='container'>
             <marquee behavior="alternate" direction="up">
-                <h2 className='categories-title'> Different Books Type</h2></marquee>
+                <h2 className='categories-title my-4'> Different Books Type</h2></marquee>
             <div className="categories-container">
                 {
                     categories.map(category => <Category key={category.id} category={category}></Category>)
