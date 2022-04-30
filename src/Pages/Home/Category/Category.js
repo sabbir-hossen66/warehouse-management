@@ -4,7 +4,7 @@ import '../Category/Category.css'
 const Category = ({ category }) => {
     const { name, img, description, price, quantity, suppliername } = category;
     return (
-        <div>
+        <div className='category-style'>
             <img src={img} alt="" />
             <h3>category{name}</h3>
             <p>supplier: {suppliername}</p>

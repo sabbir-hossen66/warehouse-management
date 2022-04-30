@@ -7,9 +7,25 @@
 }
 
 .categories-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #f5f3f3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    grid-gap: 1rem;
 
+}
+
+/* use media query */
+@media only screen and (max-width:576px) {
+    .categories-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width:577px)and (max-width:992px) {
+    .categories-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
