@@ -11,10 +11,13 @@ const Categories = () => {
     }, [])
     return (
         <div>
-            <h2> Different Books Type :{categories.length}</h2>
-            {
-                categories.map(category => <Category key={category.id} category={category}></Category>)
-            }
+            <marquee behavior="alternate" direction="up">
+                <h2 className='categories-title'> Different Books Type</h2></marquee>
+            <div className="categories-container">
+                {
+                    categories.map(category => <Category key={category.id} category={category}></Category>)
+                }
+            </div>
         </div>
     );
 };

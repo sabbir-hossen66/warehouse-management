@@ -1,0 +1,15 @@
+.categories-title {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: cornflowerblue;
+}
+
+.categories-container {
+    background-color: #f5f3f3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+
+}

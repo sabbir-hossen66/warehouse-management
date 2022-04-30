@@ -8,7 +8,7 @@ import Title from './Pages/Title/Title';
 
 function App() {
   return (
-    <div>
+    <div className='font-style'>
       <Title></Title>
       <Header></Header>
       <Routes>
