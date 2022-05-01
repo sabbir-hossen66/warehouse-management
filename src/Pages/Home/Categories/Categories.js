@@ -8,14 +8,16 @@ const Categories = () => {
         fetch('categories.json')
             .then(res => res.json())
             .then(data => setCategories(data));
-    }, [])
+    }, []);
+    // slice method
+    const sliceCategories = categories.slice(0, 6);
     return (
         <div className='container'>
             <marquee behavior="alternate" direction="up">
                 <h2 className='categories-title my-4'> Different Books Type</h2></marquee>
             <div className="categories-container">
                 {
-                    categories.map(category => <Category key={category.id} category={category}></Category>)
+                    sliceCategories.map(category => <Category key={category.id} category={category}></Category>)
                 }
             </div>
         </div>

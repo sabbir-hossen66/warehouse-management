@@ -46,5 +46,13 @@
         "quantity": 112,
         "suppliername": "rased",
         "img": "https://i.ibb.co/Bj5dWWN/book-6-1.png"
+    },
+    {
+        "name": "Medical Science",
+        "description": "These books for student whose are study in medical",
+        "price": 120,
+        "quantity": 112,
+        "suppliername": "rased",
+        "img": "https://i.ibb.co/Bj5dWWN/book-6-1.png"
     }
 ]

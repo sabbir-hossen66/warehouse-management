@@ -6,7 +6,7 @@ const Category = ({ category }) => {
     return (
         <div className='category-style'>
             <img src={img} alt="" />
-            <h3>category{name}</h3>
+            <h3>{name}</h3>
             <p>supplier: {suppliername}</p>
             <p>price: ${price}</p>
             <p>quantity: {quantity}</p>
