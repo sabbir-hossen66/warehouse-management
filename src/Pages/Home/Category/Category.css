@@ -3,4 +3,21 @@
     border-radius: 10px;
     padding-bottom: 0.5rem;
     text-align: center;
+    position: relative;
+    height: 37rem;
+}
+
+.button-style {
+    padding: 0.35rem;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 0.25rem;
+    position: absolute;
+    bottom: 0.5rem;
+}
+
+.button-style:hover {
+    color: white;
+    background-color: rgb(78, 124, 211);
 }

@@ -1,49 +1,49 @@
 [
     {
-        "name": "book",
-        "description": "abc",
+        "name": "Children book",
+        "description": "These are  quality books for children",
         "price": 120,
-        "quantity": 2,
+        "quantity": 102,
         "suppliername": "rased",
         "img": "https://i.ibb.co/HqKHm2s/book-3-1.png"
     },
     {
-        "name": "book",
-        "description": "abc",
-        "price": 120,
-        "quantity": 2,
+        "name": "Quran",
+        "description": "These are Islamic books.The world best books",
+        "price": 220,
+        "quantity": 842,
         "suppliername": "rased",
         "img": "https://i.ibb.co/n8DVFRG/book-9.png"
     },
     {
-        "name": "book",
-        "description": "abc",
-        "price": 120,
-        "quantity": 3,
+        "name": "Science",
+        "description": "There is Scientific side",
+        "price": 652,
+        "quantity": 123,
         "suppliername": "rased",
         "img": "https://i.ibb.co/Wcc0G6n/book-1-1-1.png"
     },
     {
-        "name": "book",
-        "description": "abc",
-        "price": 120,
-        "quantity": 4,
+        "name": "Story",
+        "description": "These books are very interesting",
+        "price": 320,
+        "quantity": 41,
         "suppliername": "rased",
         "img": "https://i.ibb.co/3kX5q42/book-4-1.png"
     },
     {
-        "name": "book",
-        "description": "abc",
-        "price": 120,
-        "quantity": 5,
+        "name": "Motivational book",
+        "description": "These are Motivational side..The Writers made this types books are very carefully",
+        "price": 340,
+        "quantity": 510,
         "suppliername": "rased",
         "img": "https://i.ibb.co/mvKxgLf/book-5-1.png"
     },
     {
-        "name": "book",
-        "description": "abc",
+        "name": "Medical Science",
+        "description": "These books for student whose are study in medical",
         "price": 120,
-        "quantity": 6,
+        "quantity": 112,
         "suppliername": "rased",
         "img": "https://i.ibb.co/Bj5dWWN/book-6-1.png"
     }
