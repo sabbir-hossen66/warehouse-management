@@ -7,6 +7,8 @@ import writer3 from '../../../../images/writers/writer-3.png';
 import writer4 from '../../../../images/writers/writer-4.png';
 import writer5 from '../../../../images/writers/writer-5.png';
 import writer6 from '../../../../images/writers/writer-6.png';
+import Writer from '../Writer/Writer';
+
 
 const writers = [
     { name: 'Nazrul', country: 'Bangladesh', img: writer1 },
@@ -21,6 +23,11 @@ const Writers = () => {
     return (
         <div className='container'>
             <marquee behavior="alternate" direction="down"><h2 className='text-danger text-center my-4 font-bold'>Book Writers</h2></marquee>
+            <div className="row">
+                {
+                    writers.map(writer => <Writer key={writer.id} writer={writer}></Writer>)
+                }
+            </div>
         </div>
     );
 };
