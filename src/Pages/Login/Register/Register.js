@@ -1,9 +1,20 @@
 import React from 'react';
 import './Register.css'
 import register from '../../../images/register (1).png'
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Register = () => {
+    const navigate = useNavigate();
+    const navigateLogin = () => {
+        navigate('/login')
+    }
+    const handleRegister = event => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+    }
     return (
 
         <div className='register-form'>
@@ -13,14 +24,13 @@ const Register = () => {
                 <h2>Please Register</h2>
             </div>
 
-            <form>
+            <form onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='your name' />
                 <input type="email" name="email" id="" placeholder='your email' required />
-
                 <input type="password" name="password" id="" placeholder='your password' required />
-                <input type="submit" value="Register" />
+                <input style={{ backgroundColor: "#6c757d", color: "white", border: "none", fontWeight: "bold", padding: "0.5rem" }} type="submit" value="Register" />
             </form>
-
+            <p className='paragraph mt-2'>Already have an account ? <Link to='/login' className='new-color pe-auto text-decoration-none' onClick={navigateLogin}>Please...Log In here...!</Link></p>
         </div>
 
     );
