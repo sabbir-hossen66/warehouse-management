@@ -1,0 +1,8 @@
+.error-style {
+    font-family: cursive;
+    font-weight: bolder;
+    background-color: #f2f5f4;
+    color: hotpink;
+    border: none;
+    border-radius: 0.5rem;
+}

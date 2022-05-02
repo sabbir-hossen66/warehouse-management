@@ -21,7 +21,7 @@ const writers = [
 
 const Writers = () => {
     return (
-        <div className='container'>
+        <div id='writers' className='container'>
             <marquee behavior="alternate" direction="down"><h2 className='text-danger text-center my-4 font-bold'>Book Writers</h2></marquee>
             <div className="row">
                 {

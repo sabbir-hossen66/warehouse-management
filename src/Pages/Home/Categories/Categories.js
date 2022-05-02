@@ -12,7 +12,7 @@ const Categories = () => {
     // slice method
     const sliceCategories = categories.slice(0, 6);
     return (
-        <div className='container'>
+        <div id='categories' className='container'>
             <marquee behavior="alternate" direction="up">
                 <h2 className='categories-title my-4'> Different Books Type</h2></marquee>
             <div className="categories-container">

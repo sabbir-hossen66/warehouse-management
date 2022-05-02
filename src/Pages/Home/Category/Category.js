@@ -1,8 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Category/Category.css'
 
 const Category = ({ category }) => {
-    const { name, img, description, price, quantity, suppliername } = category;
+    const { id, name, img, description, price, quantity, suppliername } = category;
+    const navigate = useNavigate();
+
+    const navigateToCategoryDetail = id => {
+        navigate(`/category/${id}`);
+    }
     return (
         <div className='category-style'>
             <img src={img} alt="" />
@@ -11,7 +17,7 @@ const Category = ({ category }) => {
             <p>price: ${price}</p>
             <p>quantity: {quantity}</p>
             <p>description: <small>{description}</small></p>
-            <button className='button-style p-2'>Update</button>
+            <button className='button-style p-2' onClick={() => navigateToCategoryDetail(id)}>Update</button>
         </div>
 
 
