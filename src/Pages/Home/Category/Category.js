@@ -11,8 +11,11 @@ const Category = ({ category }) => {
             <p>price: ${price}</p>
             <p>quantity: {quantity}</p>
             <p>description: <small>{description}</small></p>
-            <button className='button-style'>Update</button>
+            <button className='button-style p-2'>Update</button>
         </div>
+
+
+
     );
 };
 

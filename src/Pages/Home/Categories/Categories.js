@@ -20,6 +20,11 @@ const Categories = () => {
                     sliceCategories.map(category => <Category key={category.id} category={category}></Category>)
                 }
             </div>
+
+            <div >
+                <button className='show-button'>See All Product</button>
+            </div>
+
         </div>
     );
 };

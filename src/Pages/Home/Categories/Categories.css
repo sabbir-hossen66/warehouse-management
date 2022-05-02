@@ -17,6 +17,24 @@
 
 }
 
+.show-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(28, 33, 99, 0.329);
+
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 2rem;
+
+}
+
 /* use media query */
 @media only screen and (max-width:576px) {
     .categories-container {
