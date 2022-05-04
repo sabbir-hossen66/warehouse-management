@@ -1,0 +1,16 @@
+.body-style {
+    background-color: rgb(0, 0, 0);
+    font-family: cursive;
+    padding-bottom: 0.25rem;
+}
+
+.question-title {
+    text-align: center;
+    color: aqua;
+
+
+}
+
+.ans-style {
+    color: darkorange;
+}
