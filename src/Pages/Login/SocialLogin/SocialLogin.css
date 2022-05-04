@@ -1,0 +1,19 @@
+.paragraph-or {
+    background-color: rgba(128, 128, 128, 0.404);
+    padding: 1px;
+}
+
+.text-style {
+    font-weight: 800;
+    color: rgba(169, 169, 169, 0.925);
+}
+
+.google-button {
+    border: none;
+    padding: 0.50rem;
+    border-radius: 0.25rem;
+}
+
+.google-button:hover {
+    background-color: skyblue;
+}

@@ -1,0 +1,13 @@
+.checkout-button {
+    background-color: #0dcaf0;
+    font-weight: 600;
+    box-shadow: 0 9px gainsboro;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 00.25rem;
+}
+
+.checkout-button:hover {
+    background-color: #1099b4;
+}

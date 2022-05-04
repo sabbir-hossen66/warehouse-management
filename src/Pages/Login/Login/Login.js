@@ -2,24 +2,35 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Login.css'
 import login from '../../../images/login-photo.png'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.pathname || "/"
 
+    let errorElement;
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    if (error) {
+
+        errorElement =
+            <p className='text-danger'>Error: {error?.message}</p>
+
+
+    }
 
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     const handleSubmit = event => {
@@ -44,25 +55,22 @@ const Login = () => {
             </div>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
                     <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
                     </Form.Text>
                 </Form.Group>
-
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="secondary" type="submit">
-                    Submit
+
+                <Button className='d-block mx-auto w-25 mb-2' variant="secondary" type="submit">
+                    Login
                 </Button>
             </Form>
+            {errorElement}
             <p className='paragraph mt-2'>Are You New Member to Book WereHouse ? <Link to='/register' className='new-color pe-auto text-decoration-none' onClick={navigateRegister}>Please...Register here...!</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
