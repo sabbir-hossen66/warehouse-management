@@ -12,7 +12,7 @@
 }
 
 
-.register-form input {
+.register-form input:not([type=checkbox]) {
     font-family: monospace;
     border-radius: 0.25rem;
     display: block;
