@@ -10,6 +10,7 @@ import Loading from '../../Shared/Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -70,6 +71,7 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto'>
+            <PageTitle title="Login"></PageTitle>
             <div className="d-flex align-items-center my-4">
                 <div>
                     <img className='w-25' src={login} alt="" />

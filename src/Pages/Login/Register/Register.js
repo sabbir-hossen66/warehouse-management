@@ -6,6 +6,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 
 
@@ -52,7 +53,7 @@ const Register = () => {
 
 
         <div className='register-form'>
-
+            <PageTitle title="Register"></PageTitle>
             <div className='register-photo text-center align-items-center my-4'>
                 <img src={register} alt="" />
                 <h2>Please Register</h2>
