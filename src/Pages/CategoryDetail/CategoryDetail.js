@@ -28,7 +28,7 @@ const CategoryDetail = () => {
             </div>
             <div className='text-center mb-5'>
                 <Link to="/checkout">
-                    <button className='checkout-button'>Checkout</button>
+                    <button className='checkout-button'>Manage Items</button>
                 </Link>
             </div>
         </div>

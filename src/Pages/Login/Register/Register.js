@@ -38,7 +38,6 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
         if (agree) {
 
             await createUserWithEmailAndPassword(email, password);
@@ -49,9 +48,6 @@ const Register = () => {
 
     }
     return (
-
-
-
         <div className='register-form'>
             <PageTitle title="Register"></PageTitle>
             <div className='register-photo text-center align-items-center my-4'>
@@ -66,8 +62,8 @@ const Register = () => {
 
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 <label className={agree ? 'text-primary' : 'text-danger'} htmlFor="terms"><span className='ms-2  fw-normal'>accept terms and condition</span></label>
-
-                <input className='submit-button my-2 w-25 mx-auto' style={{ backgroundColor: "#6c757d", color: "white", border: "none", fontWeight: "bold", padding: "2" }} type="submit" value="Register" />
+                <input
+                    className='submit-button my-2 w-25 mx-auto' style={{ backgroundColor: "#6c757d", color: "white", border: "none", fontWeight: "bold", padding: "2" }} type="submit" value="Register" />
 
             </form>
             <p className='paragraph mt-2'>Already have an account ? <Link to='/login' className='new-color pe-auto text-decoration-none' onClick={navigateLogin}>Please...Log In here...!</Link></p>

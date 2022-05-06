@@ -20,7 +20,11 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/category/:categoryId' element={<CategoryDetail></CategoryDetail>}></Route>
+        <Route path='/category/:categoryId' element={
+          <RequireAuth>
+            <CategoryDetail></CategoryDetail>
+          </RequireAuth>
+        }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/checkout' element={
