@@ -8,8 +8,9 @@ import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import Title from './Pages/Title/Title';
 import Header from './Pages/Shared/Header/Header';
-import NotFound from './Pages/Shared/NotFound/NotFound';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AddCategory from './Pages/AddCategory/AddCategory';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <CheckOut></CheckOut>
           </RequireAuth>
         }></Route>
+        <Route path='/addcategory' element={<AddCategory></AddCategory>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

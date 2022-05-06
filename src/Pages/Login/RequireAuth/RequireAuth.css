@@ -1,8 +1,24 @@
+.require-style {
+    text-align: center;
+    margin-top: 3rem;
+    font-family: cursive;
+}
+
 .verify-button-style {
     text-align: center;
+    display: inline;
     margin-top: 2rem;
     border: none;
     background-color: rgb(106, 218, 201);
     border-radius: 0.25rem;
     padding: 1rem;
+    color: black;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+
+.verify-button-style:hover {
+    opacity: 1
 }
