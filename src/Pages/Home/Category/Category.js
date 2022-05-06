@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../Category/Category.css'
 
 const Category = ({ category }) => {
-    const { id, name, img, description, price, quantity, suppliername } = category;
+    const { _id, name, img, description, price, quantity, suppliername } = category;
     const navigate = useNavigate();
 
     const navigateToCategoryDetail = id => {
@@ -17,7 +17,7 @@ const Category = ({ category }) => {
             <p>price: ${price}</p>
             <p>quantity: {quantity}</p>
             <p>description: <small>{description}</small></p>
-            <button className='button-style p-2' onClick={() => navigateToCategoryDetail(id)}>Update</button>
+            <button className='button-style p-2' onClick={() => navigateToCategoryDetail(_id)}>Update</button>
         </div>
 
 

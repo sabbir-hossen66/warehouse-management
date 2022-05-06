@@ -10,7 +10,7 @@ const Writer = ({ writer }) => {
                 <div className="card-body">
                     <h5 className="card-title">Name: {name}</h5>
                     <h5 className="card-title"><small>From: {country}</small></h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-text">They are fantastic writer.And their skill is too much good.They always try to find new things that's very interesting and very helpful for everyone</p>
                     <a href="#" className="btn btn-danger">Go somewhere</a>
                 </div>
             </div>

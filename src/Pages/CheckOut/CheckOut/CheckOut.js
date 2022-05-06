@@ -3,8 +3,8 @@ import './CheckOut.css'
 
 const CheckOut = () => {
     return (
-        <div>
-            <h2>checkout</h2>
+        <div className='full-body'>
+            <h1>Thanks For Check This Project</h1>
         </div>
     );
 };

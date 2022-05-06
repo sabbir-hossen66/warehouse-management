@@ -5,7 +5,7 @@ import Category from '../Category/Category';
 const Categories = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-        fetch('categories.json')
+        fetch('http://localhost:5000/category')
             .then(res => res.json())
             .then(data => setCategories(data));
     }, []);
@@ -17,11 +17,11 @@ const Categories = () => {
                 <h2 className='categories-title my-4'> Different Books Type</h2></marquee>
             <div className="categories-container">
                 {
-                    sliceCategories.map(category => <Category key={category.id} category={category}></Category>)
+                    sliceCategories.map(category => <Category key={category._id} category={category}></Category>)
                 }
             </div>
 
-            <div >
+            <div>
                 <button className='show-button'>See All Product</button>
             </div>
 
