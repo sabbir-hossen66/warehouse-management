@@ -1,0 +1,8 @@
+.verify-button-style {
+    text-align: center;
+    margin-top: 2rem;
+    border: none;
+    background-color: rgb(106, 218, 201);
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
