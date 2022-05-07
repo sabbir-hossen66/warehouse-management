@@ -14,6 +14,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import ManageCategories from './Pages/ManageCategories/ManageCategories';
 import { ToastContainer } from 'react-toastify';
 import MyItem from './Pages/MyItem/MyItem';
+import Writers from './Pages/Home/Home/Writers/Writers';
+
 
 
 function App() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PageTitle from '../../Shared/PageTitle/PageTitle';
 import '../Category/Category.css'
 
 const Category = ({ category }) => {
@@ -10,7 +11,9 @@ const Category = ({ category }) => {
         navigate(`/category/${id}`);
     }
     return (
+
         <div className='category-style'>
+            <PageTitle title="categories"></PageTitle>
             <img src={img} alt="" />
             <h3>{name}</h3>
             <p>supplier: {suppliername}</p>
