@@ -3,3 +3,11 @@
     font-family: cursive;
     color: coral;
 }
+
+.delete-button {
+    border: none;
+    background-color: rgb(185, 69, 49);
+    color: white;
+    border-radius: 00.25rem;
+
+}

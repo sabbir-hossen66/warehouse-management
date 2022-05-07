@@ -38,7 +38,7 @@ const ManageCategories = () => {
                             <h6 className="card-title">supplier: {category.suppliername}</h6>
                             <p className="card-text">{category.description}</p>
 
-                            <button onClick={() => handleDelete(category._id)}>Delete</button>
+                            <button className='delete-button' onClick={() => handleDelete(category._id)}>Delete</button>
 
                         </div>
                     </div>
