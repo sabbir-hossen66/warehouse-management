@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useCategoryDetail from '../../hooks/useCategoryDetail';
 import './CategoryDetail.css'
 
 const CategoryDetail = () => {
     const { categoryId } = useParams();
-    const [category, setCategory] = useState({});
-
-
-    useEffect(() => {
-        const url = `http://localhost:5000/category/${categoryId}`
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setCategory(data))
-    }, [])
+    const [category] = useCategoryDetail(categoryId)
     return (
         <div>
             <div className="card w-25 mx-auto my-5">
@@ -27,8 +20,8 @@ const CategoryDetail = () => {
                 </div>
             </div>
             <div className='text-center mb-5'>
-                <Link to="/checkout">
-                    <button className='checkout-button'>Manage Items</button>
+                <Link to={`/checkout/${categoryId}`}>
+                    <button className='checkout-button'>Order Items</button>
                 </Link>
             </div>
         </div>

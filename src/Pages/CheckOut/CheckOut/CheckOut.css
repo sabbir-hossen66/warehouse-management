@@ -1,8 +1,26 @@
-.full-body {
-    background-color: black;
-    color: white;
+.header-style {
+    color: rgb(242, 160, 59);
     font-family: cursive;
-    font-size: xx-large;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+
+.input-style input {
+    border: none;
+    background-color: beige;
+    padding: 0.25rem;
+}
+
+.item-color {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 500;
+
 
 
 }

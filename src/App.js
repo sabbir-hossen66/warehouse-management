@@ -12,6 +12,8 @@ import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AddCategory from './Pages/AddCategory/AddCategory';
 import NotFound from './Pages/Shared/NotFound/NotFound';
 import ManageCategories from './Pages/ManageCategories/ManageCategories';
+import { ToastContainer } from 'react-toastify';
+import MyItem from './Pages/MyItem/MyItem';
 
 
 function App() {
@@ -29,7 +31,7 @@ function App() {
         }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/checkout' element={
+        <Route path='/checkout/:categoryId' element={
           <RequireAuth>
             <CheckOut></CheckOut>
           </RequireAuth>
@@ -40,10 +42,16 @@ function App() {
             <ManageCategories></ManageCategories>
           </RequireAuth>
         }></Route>
+        <Route path='/myitem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        }></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

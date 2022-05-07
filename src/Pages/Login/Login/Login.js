@@ -7,7 +7,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import PageTitle from '../../Shared/PageTitle/PageTitle';
@@ -98,7 +98,7 @@ const Login = () => {
             <p className='paragraph mt-2'>Are You New Member to Book WereHouse ? <Link to='/register' className='new-color pe-auto text-decoration-none' onClick={navigateRegister}>Please...Register here...!</Link></p>
             <p className='paragraph mt-2'>Forget Your password ? <button className='new-color pe-auto text-decoration-none text-info btn btn-link' onClick={resetPassword}>Reset your password</button></p>
             <SocialLogin></SocialLogin>
-            <ToastContainer />
+
         </div>
     );
 };

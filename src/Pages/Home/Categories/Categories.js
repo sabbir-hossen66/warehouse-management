@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Categories/Categories.css'
 import Category from '../Category/Category';
 
@@ -22,7 +23,8 @@ const Categories = () => {
             </div>
 
             <div>
-                <button className='show-button'>See All Product</button>
+
+                <button className='show-button'><Link to="/manage">Manage Inventory </Link></button>
             </div>
 
         </div>
