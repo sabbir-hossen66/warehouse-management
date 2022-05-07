@@ -11,6 +11,7 @@ import Header from './Pages/Shared/Header/Header';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import AddCategory from './Pages/AddCategory/AddCategory';
 import NotFound from './Pages/Shared/NotFound/NotFound';
+import ManageCategories from './Pages/ManageCategories/ManageCategories';
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/addcategory' element={<AddCategory></AddCategory>}></Route>
+        <Route path='/manage' element={
+          <RequireAuth>
+            <ManageCategories></ManageCategories>
+          </RequireAuth>
+        }></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>

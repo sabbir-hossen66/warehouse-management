@@ -1,0 +1,16 @@
+.addCategory-style {
+    align-items: center;
+    text-align: center;
+
+}
+
+.addCategory-style h2 {
+    color: tomato;
+}
+
+.box-model input {
+    border: none;
+    background-color: rgb(233, 228, 228);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}

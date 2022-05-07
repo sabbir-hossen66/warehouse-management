@@ -21,9 +21,9 @@ const AddCategory = () => {
     };
 
     return (
-        <div className='w-50 mx-auto'>
+        <div className='addCategory-style my-5'>
             <h2>Different Category Books Added</h2>
-            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+            <form className='box-model d-flex flex-column w-25 mx-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input className='mb-2' placeholder='name' {...register("name", { required: true, maxLength: 20 })} />
                 <input className='mb-2' placeholder='email' {...register("email")} />
                 <input className='mb-2' placeholder='quantity' {...register("quantity")} />
@@ -31,7 +31,9 @@ const AddCategory = () => {
                 <input className='mb-2' placeholder='price' type="number" {...register("price")} />
                 <input className='mb-2' placeholder='photo url' type="text" {...register("img")} />
                 <textarea className='mb-2' placeholder=' description'{...register("description")} />
-                <input type="submit" value="Add Category" />
+                <div className='submit-style'>
+                    <input type="submit" value="Add Category" />
+                </div>
             </form>
 
         </div>
