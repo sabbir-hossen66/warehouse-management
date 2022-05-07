@@ -19,6 +19,8 @@ const CategoryDetail = () => {
                     <a href="#" class="btn btn-info text-white">Deliver</a>
                 </div>
             </div>
+
+
             <div className='text-center mb-5'>
                 <Link to={`/checkout/${categoryId}`}>
                     <button className='checkout-button'>Order Items</button>

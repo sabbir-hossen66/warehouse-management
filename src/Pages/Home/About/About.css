@@ -15,5 +15,13 @@
 .social-style {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
-    font-weight: bold;
+
+}
+
+.font-style {
+    font-weight: bolder;
+}
+
+.social-icon-style:hover {
+    color: rgb(224, 146, 2);
 }

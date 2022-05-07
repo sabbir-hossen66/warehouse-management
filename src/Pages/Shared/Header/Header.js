@@ -32,7 +32,7 @@ const Header = () => {
                         {/* <Nav.Link as={Link} to="home">Home</Nav.Link> */}
 
                         <Nav className="ms-auto">
-                            <Nav.Link as={Link} to='#home'>Home</Nav.Link>
+                            <Nav.Link as={Link} to='home'>Home</Nav.Link>
                             <Nav.Link href="home#categories">Categories</Nav.Link>
                             <Nav.Link href="home#writers">Writers</Nav.Link>
                         </Nav>

@@ -13,33 +13,33 @@ import { BsTelephoneFill } from 'react-icons/bs';
 const About = () => {
     return (
         <div className='pb-5'>
-            <h2 className='about-header'>About us</h2>
+            <h2 className='about-header'>Contact Us</h2>
 
             <div className='flex justify-content-center'>
                 <div className='left-side me-5'>
                     <div className=' social-style'>
-                        <h4> <FaAddressBook></FaAddressBook>Address</h4>
-                        112/B - Road 121,east<br />
-                        /Kafrul Bangladesh
+                        <h3 className='font-style'> <FaAddressBook></FaAddressBook> Address</h3>
+                        112/B - Road 1200 building<br />
+                        /new kocukhet, Bangladesh
                     </div><br />
 
                     <div className=' social-style'>
-                        <h4><BsTelephoneFill></BsTelephoneFill>  phone No</h4>
-                        +007894145 <br />
-                        4587789413
+                        <h3 className='font-style'><BsTelephoneFill></BsTelephoneFill>  phone No</h3>
+                        +007894145478 <br />
+                        4587789413635
                     </div>
 
                 </div>
                 <div className="right-side">
                     <div className=' social-style'>
-                        <h4><GrMail></GrMail>  Mail</h4>
-                        yourmail@domain.com <br />
-                        houserent@domain.com
+                        <h3 className='font-style'><GrMail></GrMail>  Mail</h3>
+                        yourmail.dhaka@domain.com <br />
+                        houserent.rajbari@domain.com
                     </div><br />
 
                     <div className='social-style'>
-                        <h4><FaUserCircle></FaUserCircle>  Social Account</h4>
-                        <h4><BsFacebook></BsFacebook> <AiFillTwitterCircle></AiFillTwitterCircle>  <ImLinkedin></ImLinkedin></h4>
+                        <h3 className='font-style'><FaUserCircle></FaUserCircle> Social Account </h3>
+                        <h2><span className='social-icon-style'><BsFacebook></BsFacebook></span> <span className='social-icon-style'><AiFillTwitterCircle></AiFillTwitterCircle></span>  <span className='social-icon-style'><ImLinkedin></ImLinkedin></span></h2>
                     </div>
                 </div>
             </div>
