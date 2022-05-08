@@ -69,7 +69,8 @@ const CategoryDetail = () => {
     };
 
     return (
-        <div>
+        <div className='pb-5'>
+            <h2 className='detail-header'>Features of the book</h2>
             <div className="card w-25 mx-auto my-5">
                 <img src={img} class="card-img-top" alt="..." />
                 <div className="card-body text-center">
@@ -81,36 +82,33 @@ const CategoryDetail = () => {
                     <a onClick={() => handleDeliver()} href="#" class="btn btn-info text-white">Deliver</a>
                 </div>
             </div>
-            {/* 
-            <div className=' text-center mb-5'>
-                <input type="submit" value="Resotck" />
-                <input type="text" name="text" id="" />
-            </div> */}
 
-            <form onSubmit={handleForm}>
-                <input className="quantity" name="name" type="number" />
+            <form className='text-center ' onSubmit={handleForm}>
+                <input className="" name="name" type="number" />
                 <input
                     className="restock my-2 mx-1 rounded"
                     type="submit"
                     value="Restock category"
                 />
             </form>
-
-
-
-
-            <div className='text-center mb-5'>
+            <div className='text-center mb-3'>
                 <Link to="/manage">
                     <button className='checkout-button'>Manage Inventory</button>
                 </Link>
-            </div><br />
-
-
-            <div className='text-center mb-5'>
-                <Link to={`/checkout/${categoryId}`}>
-                    <button className='checkout-button'>Order Items</button>
-                </Link>
             </div>
+            <div>
+                <div className='text-center mb-3'>
+                    <Link to={`/checkout/${categoryId}`}>
+                        <button className='checkout-button'>Order Items</button>
+                    </Link>
+                </div>
+                <div className='text-center'>
+                    <Link to="/addcategory">
+                        <button className='checkout-button'>Add page</button>
+                    </Link>
+                </div><br /><br /><br /><br />
+            </div>
+
         </div>
     );
 };
