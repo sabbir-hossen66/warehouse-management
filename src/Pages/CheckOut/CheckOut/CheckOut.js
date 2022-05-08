@@ -22,7 +22,7 @@ const CheckOut = () => {
             phone: event.target.phone.value
 
         }
-        axios.post('http://localhost:5000/item', item)
+        axios.post('https://stormy-oasis-11527.herokuapp.com/item', item)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

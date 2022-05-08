@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useCategories = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://stormy-oasis-11527.herokuapp.com/category')
             .then(res => res.json())
             .then(data => setCategories(data));
     }, []);

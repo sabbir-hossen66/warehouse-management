@@ -6,7 +6,7 @@ const AddCategory = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/category`;
+        const url = `https://stormy-oasis-11527.herokuapp.com/category`;
         fetch(url, {
             method: 'POST',
             headers: {

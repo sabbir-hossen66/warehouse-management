@@ -12,7 +12,7 @@ const ManageCategories = () => {
 
 
         if (proceed) {
-            const url = `http://localhost:5000/category/${id}`;
+            const url = `https://stormy-oasis-11527.herokuapp.com/category/${id}`;
 
             fetch(url, {
                 method: 'DELETE'
