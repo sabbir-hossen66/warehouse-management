@@ -33,20 +33,6 @@ const MyItem = () => {
             {
                 myItem.map(item => <Item key={item._id} item={item}></Item>)
             }
-            {/*   */}
-
-
-            {/* <div className="card w-25 mx-auto my-5">
-                <img src={myItem.img} class="card-img-top" alt="..." />
-                <div className="card-body text-center">
-                    <h5 className="card-title">name: {myItem.name}</h5>
-                    <h6 className="card-title">price: {myItem.price}</h6>
-                    <h6 className="card-title"> quantity: {myItem.quantity}</h6>
-                    <h6 className="card-title">supplier: {myItem.suppliername}</h6>
-                    <p className="card-text">{myItem.description}</p>
-                    <a href="#" class="btn btn-info text-white">Deliver</a>
-                </div>
-            </div> */}
 
         </div>
     );

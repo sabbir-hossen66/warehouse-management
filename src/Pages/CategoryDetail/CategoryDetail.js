@@ -99,7 +99,7 @@ const CategoryDetail = () => {
             <div>
                 <div className='text-center mb-3'>
                     <Link to={`/checkout/${categoryId}`}>
-                        <button className='checkout-button'>Order Items</button>
+                        <button className='checkout-button'>Order myitems page</button>
                     </Link>
                 </div>
 

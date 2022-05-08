@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import useCategoryDetail from '../../../hooks/useCategoryDetail';
@@ -43,7 +43,8 @@ const CheckOut = () => {
                     <input className='w-100 mb-2' type="text" name="address" id="" placeholder='address' required /><br />
                     <input className='w-100 mb-2' type="text" name="phone" id="" placeholder='phone.no' required /><br />
                 </div>
-                <input className='item-color ' type="submit" value="My Items" />
+                <input className='item-color ' type="submit" value="Add to myItems" />
+                <button className='ms-2 btn btn-info'><Link to="/myitem">Go to myItems</Link></button>
             </form>
         </div>
     );
