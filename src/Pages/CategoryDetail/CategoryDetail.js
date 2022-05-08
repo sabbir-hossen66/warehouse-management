@@ -4,22 +4,100 @@ import useCategoryDetail from '../../hooks/useCategoryDetail';
 import './CategoryDetail.css'
 
 const CategoryDetail = () => {
+    const [category, setCategory] = useState({});
     const { categoryId } = useParams();
-    const [category] = useCategoryDetail(categoryId)
+    const [isReload, setIsReload] = useState(false);
+
+
+    useEffect(() => {
+
+        const url = `https://stormy-oasis-11527.herokuapp.com/category/${categoryId}`
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setCategory(data))
+    }, [categoryId, isReload]);
+    let { name, price, quantity, suppliername, img, } = category
+    // 
+
+    // const [category] = useCategoryDetail(categoryId)
+
+
+    const handleForm = (event) => {
+        event.preventDefault();
+
+        let updatedQuantity = parseInt(event.target.name.value);
+        quantity = quantity + updatedQuantity;
+
+        const updatedCategory = { quantity };
+
+        const url = `https://stormy-oasis-11527.herokuapp.com/category/${categoryId}`;
+        fetch(url, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(updatedCategory),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                event.target.reset();
+                setIsReload(!isReload)
+            });
+    };
+
+    const handleDeliver = () => {
+        const quantity = parseInt(category.quantity) - 1;
+        const updatedCategory = { quantity };
+
+        const url = `https://stormy-oasis-11527.herokuapp.com/category/${categoryId}`;
+        fetch(url, {
+            method: "PUT",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(updatedCategory),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                const proceed = window.confirm("Deliver book?");
+                if (proceed) {
+                    setIsReload(!isReload)
+                }
+            });
+    };
 
     return (
         <div>
             <div className="card w-25 mx-auto my-5">
-                <img src={category.img} class="card-img-top" alt="..." />
+                <img src={img} class="card-img-top" alt="..." />
                 <div className="card-body text-center">
-                    <h5 className="card-title">name: {category.name}</h5>
-                    <h6 className="card-title">price: {category.price}</h6>
-                    <h6 className="card-title"> quantity: {category.quantity}</h6>
-                    <h6 className="card-title">supplier: {category.suppliername}</h6>
+                    <h5 className="card-title">name: {name}</h5>
+                    <h6 className="card-title">price: {price}</h6>
+                    <h6 className="card-title"> quantity: {quantity}</h6>
+                    <h6 className="card-title">supplier: {suppliername}</h6>
                     <p className="card-text">{category.description}</p>
-                    <a href="#" class="btn btn-info text-white">Deliver</a>
+                    <a onClick={() => handleDeliver()} href="#" class="btn btn-info text-white">Deliver</a>
                 </div>
             </div>
+            {/* 
+            <div className=' text-center mb-5'>
+                <input type="submit" value="Resotck" />
+                <input type="text" name="text" id="" />
+            </div> */}
+
+            <form onSubmit={handleForm}>
+                <input className="quantity" name="name" type="number" />
+                <input
+                    className="restock my-2 mx-1 rounded"
+                    type="submit"
+                    value="Restock category"
+                />
+            </form>
+
+
+
 
             <div className='text-center mb-5'>
                 <Link to="/manage">

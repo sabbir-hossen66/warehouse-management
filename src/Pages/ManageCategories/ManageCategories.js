@@ -2,6 +2,7 @@ import React from 'react';
 import './ManageCategories.css'
 import useCategories from '../../hooks/useCategories'
 import PageTitle from '../Shared/PageTitle/PageTitle';
+import { Link } from 'react-router-dom';
 
 const ManageCategories = () => {
     const [categories, setCategories] = useCategories();
@@ -28,12 +29,18 @@ const ManageCategories = () => {
     return (
         <div className='w-50 mx-auto'>
             <PageTitle title="manage"></PageTitle>
+
+
+
             <marquee behavior="alternative" direction="up"> <h2 className='manage-headline'>Mange Book type Category</h2></marquee>
-            <div className="row">
+
+            <button className='mb-2 mx-auto'> <Link to="/addcategory">Add item</Link></button>
+
+            <div className="main-body">
                 {
                     categories.map(category => <div className='container' key={category._id}>
 
-                        <div className="card w-25 mx-auto my-5 g-5 col-sm-12 col-md-6 col-lg-4">
+                        <div className="card w-100 mx-auto my-5 g-5 col-sm-12 col-md-6 col-lg-4">
                             <img src={category.img} class="card-img-top" alt="..." />
                             <div className="card-body text-center">
                                 <h5 className="card-title">name: {category.name}</h5>

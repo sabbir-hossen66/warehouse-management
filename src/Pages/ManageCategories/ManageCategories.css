@@ -11,3 +11,8 @@
     border-radius: 00.25rem;
 
 }
+
+.main-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
