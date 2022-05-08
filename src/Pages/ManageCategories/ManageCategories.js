@@ -34,7 +34,9 @@ const ManageCategories = () => {
 
             <marquee behavior="alternative" direction="up"> <h2 className='manage-headline'>Mange Book type Category</h2></marquee>
 
-            <button className='mb-2 mx-auto'> <Link to="/addcategory">Add item</Link></button>
+            <div className='text-center mt-4'>
+                <button className='btn btn-info'> <Link to="/addcategory">Add item</Link></button>
+            </div>
 
             <div className="main-body">
                 {

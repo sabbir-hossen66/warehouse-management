@@ -102,11 +102,7 @@ const CategoryDetail = () => {
                         <button className='checkout-button'>Order Items</button>
                     </Link>
                 </div>
-                <div className='text-center'>
-                    <Link to="/addcategory">
-                        <button className='checkout-button'>Add page</button>
-                    </Link>
-                </div><br /><br /><br /><br />
+
             </div>
 
         </div>

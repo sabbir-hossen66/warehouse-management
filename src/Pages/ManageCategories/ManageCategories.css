@@ -16,3 +16,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* .add-style {
+    border: 1px solid goldenrod;
+
+    padding: 0.5rem;
+    border-radius: 0.25;
+    background-color: gainsboro;
+    color: white;
+
+} */
