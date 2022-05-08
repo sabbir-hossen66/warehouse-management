@@ -17,8 +17,8 @@ const About = () => {
                 <h2 className='about-header'>Contact Us</h2>
 
                 <div className='row justify-content-center'>
-                    <div className='left-side me-5'>
-                        <div className=' social-style'>
+                    <div className='left-side'>
+                        <div className='me-5 social-style'>
                             <h3 className='font-style'> <FaAddressBook></FaAddressBook> Address</h3>
                             112/B - Road 1200 building<br />
                             /new kocukhet, Bangladesh
