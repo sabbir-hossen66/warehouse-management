@@ -14,6 +14,7 @@ const AddCategory = () => {
             },
             body: JSON.stringify(data)
         })
+
             .then(res => res.json())
             .then(result => {
                 console.log(result);
